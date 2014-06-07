@@ -15,7 +15,7 @@ public:
 
 	Course();
 	Course(const string& courseName, int capacity);
-	string getCourseName() const;  // look at const placement
+	string getCourseName() const; 
 	void addStudent(const string& name);
 	void dropStudent(const string& name);
 	string* getStudents() const;
