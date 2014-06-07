@@ -45,18 +45,18 @@ int Course::getNumberOfStudents() const{
 
 string* Course::doubleCapacity(const string* list, int size)
 {
-	string* arr2 = new string[size * 2];
+	string* doublearr = new string[size * 2];
 
 	for (int i = 0; i < size; i++)
 	{
-		arr2[i] = list[i];
+		doublearr[i] = list[i];
 	}
 
 	for (int i = size + 1; i < size * 2; i++)
 	{
-		arr2[i] = "";
+		doublearr[i] = "";
 	}
-	return arr2;
+	return doublearr;
 }
 
 void Course::clear(){
